@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang = "en"> 
+    <head>
+       <meta charset = "UTF-8">
+       <meta name = "viewport" content = "width=device-width, initial-scale=1.0"> 
+         <title> Bài 2 web </title>
+    </head>
+
+    <body> 
+          <!-- Day la chu thich -->
+          <!-- Có 2 cách để chú thích nhanh trong visual
+             Cách 1: Ctrl + K + C
+             Cách 2: Ctrl + /
+          -->
+
+          <!-- p: Thẻ phân đoạn -->
+          <p> Môn web: Nhóm 04 </p>
+          
+          <!-- Đề mục có từ h1 đến h6 -->
+          <h1> Tiêu đề 1 </h1>
+          <h2> Tiêu đề 2 </h2>
+          <h3> Tiêu đề 3  </h3>
+
+          <!-- Xuống dòng dùng thẻ <br> -->
+          <p> 
+            Môn phát triển ứng dụng web <br> Nhóm 04 
+          </p>
+
+          <!-- Thẻ phân đoạn dùng để chia khối -->
+          <!-- Thẻ div cho phép tạo khối liền mạch nhấn mạnh là khối -->
+          <!-- Còn thẻ p là để viết đoạn là chữ--> 
+          <div> Thẻ div </div> 
+
+          <!-- Thẻ định dạng của ký tự --> 
+          <b> Thẻ b dùng để viết đậm </b> <br>
+          <i> Thẻ i dùng viết nghiêng </i> <br>
+          <u> Thẻ u dùng viết gạch chân </u> <br>
+          <b><i><u> Lê thanh tùng </u></i></b>
+          
+          <!-- Thẻ font dùng để tự cấu hình thuộc tính hiển thị cho 1 đoạn văn bản -->
+          <div> 
+            <font face = "verdana"> Đây là phông chữ </font> <br>
+            <font size = "10"> Đây là cỡ chữ </font> <br>
+            <font color = "blue"> Đây là màu chữ </font> <br>
+            <font face = "arial" size = "5" color = "green"> Lê thanh tùng  </font>
+          </div> 
+
+          <!-- Định dạng chỉ số trên và dưới -->
+          <div> 
+            x<sup>2</sup>
+            <br>
+            H<sub>2</sub>O
+          </div> 
+          
+          <!-- Thẻ ảnh dùng để chèn ảnh dùng ảnh của mình hoặc mạng trên internet -->
+          <div>
+             <img src = "picture/dothi.png"> <br>
+             <img src = "../anh/machine.png">
+             <!-- ../ là lùi 1 folder -->
+          </div>
+
+          <!-- Thẻ dùng để liên kết -->
+          <div> 
+             <a href = "https://humg.edu.vn/Pages/home.aspx"> Liên kết đến trang HUMG </a> <br>
+             <a href = "../bai1/demo.html"> Đi đến bài 1 </a>
+          </div>
+
+          <!-- Bảng -->
+          <div> 
+            <!-- Định nghĩa bảng -->
+
+            <table border = "1">
+              <caption> Bảng 1: Bảng thông tin sinh viên </caption>   <!-- Đề mục caption của bảng -->
+
+              <!-- Định nghĩa hàng -->
+              <!-- Hàng 1 -->
+              <tr>
+                  <th> STT </th>
+                  <th colspan = "2"> Họ và tên </th>
+                  <th> Giới tính </th>
+                  <th> Mã sinh viên </th>
+                  <th> Lớp </th>
+              </tr>
+                  
+              <!-- Hàng 2 -->
+              <tr>
+                  <td> 1 </td>
+                  <td> Cấn Đinh </td>
+                  <td> Hoàng An </td>
+                  <td rowspan = "3"> Nam </td>
+                  <td> 2321030062 </td>
+                  <td> Đại Học_Địa tin học_K68 </td>
+              </tr>
+              <!-- rowspan là thuộc tính gộp các hàng -->
+              <!-- Hàng 3 -->
+              <tr>
+                  <td> 2 </td>
+                  <td> Nguyễn </td>
+                  <td> Hoàng Tùng </td>
+                  <td> 2221050076 </td>
+                  <td> Dầu khí </td>
+              </tr>
+               
+              <tr>
+                  <td> 3 </td>
+                  <td> Lê </td>
+                  <td> Thanh Tùng </td>
+                  <td> 2221050832 </td>
+                  <td> Hệ thống thông tin </td>
+              </tr>
+              
+
+            </table>
+          </div>
+
+          <div>
+            <p><b> a. Bảng quy đổi giữa xét tuyển theo học bạ và xét tuyển theo kết quả thi THPT </b></p>
+            <table border = "1" cellspacing = "0" cellpadding = "10" width = "100%">
+              <tr>
+                <th rowspan = "2"> </th>
+                <th colspan = "2"> Điểm thi THPT </th>
+                <th colspan = "2"> Điểm HB THPT </th>
+              </tr>
+
+              <tr> 
+                <th> c </th>
+                <th> d </th>
+                <th> b </th>
+                <th> a </th>
+              </tr>
+
+              <tr>
+                <td> Khoảng 1 </td>
+                <td> 27.5 </td>
+                <td> 30 </td>
+                <td> 29 </td>
+                <td> 30 </td>
+              </tr>
+
+              <tr>
+                <td> Khoảng 2 </td>
+                <td> 22.5 </td>
+                <td> 27.5 </td>
+                <td> 24.5 </td>
+                <td> 29 </td>
+              </tr>
+
+              <tr>
+                <td> Khoảng 3 </td>
+                <td> 20 </td>
+                <td> 22.5 </td>
+                <td> 22 </td>
+                <td> 24.5 </td>
+              </tr>
+
+              <tr>
+                <td> Khoảng 4 </td>
+                <td> 17.5 </td>
+                <td> 20 </td>
+                <td> 20 </td>
+                <td> 22 </td>
+              </tr>
+
+              <tr> 
+                <td> Khoảng 5 </td>
+                <td> 15 </td>
+                <td> 17.5 </td>
+                <td> 18 </td>
+                <td> 20 </td>
+              </tr>
+            </table>
+          </div>
+    </body>
+</html>    

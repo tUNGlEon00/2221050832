@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+       <meta charset = "UTF-8">
+       <meta name = "viewport" content = "width=device-width, initial-scale=1.0"> 
+         <title> Bài 3 web </title>
+    </head>
+
+    <body> 
+        <MARQUEE>
+            Đối tượng
+            <img src="dothi.png">
+            <!-- Có thể chèn ảnh -->
+        </MARQUEE>
+            <!-- Danh sách List -->
+        <!-- Danh sách <ol> có thứ tự -->   
+         <ol>
+            <li> C# </li>
+            <li> Python </li>
+            <li> JavaScript </li>
+         </ol>
+
+        <!-- Danh sách <ul> có thứ tự -->  
+         <ul>
+            <li> C# </li>
+            <li> Python </li>
+            <li> JavaScript </li>
+         </ul>
+
+            <!-- Form là 1 vùng gồm nhiều phần tử cho phép người dùng nhập thông tin vào trang web -->
+        <h1> Form Đăng Ký </h1>
+        <form>
+          <div>
+              <b> Họ và tên </b> <br>
+              <!-- Nếu input không có type thì mặc định là text -->
+              <!-- Thuộc tính readonly sử dụng khi không muốn người dùng nhập thông tin vào input -->
+              <input type="text" placeholder="Họ và tên">   <!-- placeholder là để tạo ô chữ mờ cho phần input -->
+          </div>
+          
+          <div>
+              <b> Năm sinh </b> <br>
+              <input type="number" placeholder="Năm sinh">
+          </div>
+
+          <div>
+              <b> Mật khẩu </b> <br>
+              <input type="password" placeholder="Mật khẩu">
+          </div>
+
+          <div>
+              <b> Giới thiệu về bản thân </b> <br>
+              <textarea> Nhập thông tin ... </textarea>    <!-- Cho phép nhập văn bản dài -->
+          </div>
+
+          <div> 
+              <b> Email </b> <br>
+              <input type="email">
+          </div>
+
+          <div>
+              <!-- Số đầu tiên: 0 -->
+              <!-- Số thứ 2: 3, 8, 9 -->
+              <!-- 8 số còn lại: 0-9 -->
+              <b> Số điện thoại </b> <br>
+              <input type="tel" 
+              pattern="([0]{1}([3,8,9]{1})([0-9]{8}))"> 
+          </div>
+
+          <div>
+              <b> Giới tính </b> <br>
+              <input type="radio" name="gender" value="nam"> Nam <br>        
+              <input type="radio" name="gender" value="nu"> Nữ <br>
+          </div>
+           
+          <div>
+              <b> Sở thích </b> <br>
+              Game:  <input type="checkbox" name="favorite" value="choigame"> <br>
+              Nghe nhạc:  <input type="checkbox" name="favorite" value="nghenhac"> <br>
+              Thể thao:  <input type="checkbox" name="favorite" value="thethao"> <br>     
+          </div>
+
+          <div>
+              <b> Trình duyệt web ưa thích </b> <br>
+              <select name="browsers">
+                <option value="Internet Explorer"> Internet Explorer </option>
+                <option value="Firefox"> FireFox </option>
+                <option value="Chrome"> Chrome </option>
+                <option value="Opera"> Opera </option>
+                <option value="Safari"> Safari </option>
+                <option value="Cốc Cốc"> Cốc Cốc </option>
+              </select>
+          </div>
+
+          <!-- 0 <input type="range" id="a" value="50"> 100 -->
+          <!-- Tạo thanh kéo -->
+
+
+          <div>
+              <input type="submit">
+              <button> Xác nhận </button>
+              <input type="reset"> 
+          </div>
+        </form>  
+        
+        <iframe width="560" 
+        height="315" 
+        src="https://www.youtube.com/embed/UOL-e1LTDag?si=thLYKlEOkV5xHVL8" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" 
+        allowfullscreen></iframe>
+ 
+        <video controls width="560" height="315">
+            <source src="đường dẫn" type="video/mp4">
+        </video>
+
+        <audio controls>
+            <source src="đường dẫn" type="audio/mp3">
+        </audio>
+
+    </body>
+</html> 

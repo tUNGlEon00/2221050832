@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Đào tạo HUMG </title>
+    <style>
+        body {
+            margin: 0px;
+        }
+        .menu{
+            background-color: #2fa4e7;
+        }
+        .danh-sach-muc{
+            /*bỏ dấu chấm của list*/
+            list-style: none;
+            margin: 0px;
+            display: flex;
+
+        }
+        .muc{
+            color: white;
+            /*font-weight: bold;*/
+            padding: 15px;
+
+        }
+        a{
+            color: white;
+            /* để bỏ gạch chân của thẻ a dùng text-decoration*/
+            text-decoration: none;
+        }
+        main{
+            display: flex;
+        }
+        .khoi-trai{
+            width: 20%;
+            height: 500px;
+        }
+        .khoi-phai{
+            background-color: green;
+            width: 80%;
+            height: 500px;
+        }
+        .dang-nhap{
+            background-color: grey;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+        }
+        .form{
+            width: 90%;
+        }
+        p{
+            margin: 0px;
+        }
+        button{
+            width: 100%;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Thanh Menu -->
+    <nav class="menu">
+        <ul class="danh-sach-muc">
+            <li class="muc"><a href="#">Thực tập, Đồ án</a></li>
+            <li class="muc"><a href="#">Thủ tục Một cửa</a></li>
+            <li class="muc"><a href="#">Một cửa online</a></li>
+            <li class="muc"><a href="#">E-mail HUMG</a></li>
+        </ul>
+    </nav>
+
+    <!-- /*Nội dung chính*/ -->
+    <main>
+        <div class="khoi-trai">
+            <div class="dang-nhap">
+                <form action="">
+                    <div>
+                        <p> Tài khoản </p>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <p> Mật khẩu </p>
+                        <input type="password">
+                    </div>
+                    <div class="button">
+                        <button> Đăng nhập </button>
+                    </div>
+                    <div class="button">
+                        <button> </button>
+
+                    </div>
+                   
+                </form>
+            </div>
+            <div>
+                LOGO
+            </div>
+        </div>
+        <div class="khoi-phai">Phải</div>
+    </main>
+    <nav></nav>
+</body>
+</html>

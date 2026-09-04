@@ -1,0 +1,77 @@
+#tieude-1 {
+    background-color: green;
+}
+
+.tieude-2 {
+    background-color: bisque;
+}
+
+div.web4{
+    color: pink;
+    background-color: black;
+}
+
+div b {
+    color: brown;
+    background-color: green;
+}
+
+
+/* Đây là MARGIN  */
+p.ma-day-du {
+    margin-top: 0px;
+    margin-bot: 22px;
+    margin-right: 100px;
+    margin-left: 20px;
+}
+
+p.rut-gon-ma {
+    margin: 25px 50px 75px 100px;
+}
+
+/* Đây là PADDING */
+/* Có thể viết tắt thuộc tính của padding  */
+p.padding {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 30px;
+    padding-left: 80px;
+}
+
+p.p2 {
+    padding-right: 2cm;
+}
+
+p.p3 {
+    padding-right: 50%;
+}
+
+/* thuộc tính width chỉ định chiều rộng của nội dung phần tử  */
+
+/* Bài chữa */
+/* MARGIN là xét khoản cách giữa các khối với nhau  */
+.khoi-1 {
+    background-color: red;
+}
+.khoi-2{
+    background-color: green;
+    margin: 10px 50px 100px 200px;
+    /* margin truyền 1 giá trị thì sẽ cách xung quanh bằng giá trị đó */
+    /* 2 giá trị thì giá trị đầu (trên dưới), giá trị 2 (trái phải) */
+    /* 4 giá trị thì trên phải dưới trái  */
+}
+/* PADDING là sẽ độ lớn của 1 khối */
+.khoi-3{
+    background-color: yellow;
+    padding: 10px 50px 100px 200px;
+}
+/* DÙng display thì justify-content phải đi cùng display: flex */
+#pond {
+    display: flex;
+    justify-content: flex-end; 
+    /* Justify-content là đi theo chiều ngang */
+    /* end di chuyển sang bên phải, còn start là bên trái */
+    /* between là các khối cách đều nhau theo chiều ngang là n còn 2 khối ngoài cùng tay trái và tay phải cách lề theo chiều ngang là n/2 */
+
+    /* align-items là đi theo chiều dọc  */
+}

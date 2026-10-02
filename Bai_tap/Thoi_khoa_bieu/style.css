@@ -1,0 +1,314 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 50px;
+    overflow: hidden;
+}
+
+nav{
+    background-color: #2fa4e7;
+    position:fixed;
+    top: 0;
+    width: 100%;
+}
+
+main{
+    display: flex;
+    height: calc(100vh - 50px);
+}
+
+a{
+    text-decoration: none;
+}
+
+.danh-sach-danh-muc{
+    list-style: none;
+    margin: 0px;
+    display: flex;
+    padding: 10px;
+    gap: 15px;
+}
+
+.muc{
+    padding: 7px;
+}
+
+.lien-ket-muc{
+    color: white;
+}
+
+.khoi-trai{
+    width: 23%;
+    border-right: 2px solid #2fa4e7;   
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+}
+
+.list{
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.list-luachon{
+    margin-bottom: 40px;
+}
+
+
+
+
+.chon-di{
+    padding: 15px 0px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.chon-di:hover::after{
+    transform: scaleX(1);
+    height: 3px;
+    
+
+}
+
+.chon-di:hover{
+    background: #d5edfa;
+}
+
+.chon-di::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    width: 85%;
+    height: 1px;
+    background: #2fa4e7;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: 
+        transform 0.5s ease-out,
+        height 0.3s ease-out;
+    
+}
+
+
+
+
+.dang-chon{
+    background: #d5edfa;
+}
+
+.lk-chon-di{
+    color: #2fa4eb;
+}
+
+.phan-cl{
+    width: 100%;
+    padding: auto;
+    font-size: 11px;
+    text-align: center;
+
+}
+
+
+
+
+.khoi-phai{
+    width: 77%;
+    overflow-y: auto;
+}
+
+.thoi-khoa-bieu{
+    width: 97%;
+    margin: 15px 0px 15px 15px;
+    padding: 15px 15px 0px 15px;
+    border: 2px solid #2fa4e7;
+    border-radius: 10px;
+}
+
+.tieu-de{
+    width: 99%;
+    margin: 0px auto;
+    border-bottom: 1px solid #2fa4e7;
+    padding: 0px 10px 10px 10px;
+}
+
+.bang-bieu{
+    width: 99%;
+    margin: 20px 10px 20px 10px;
+}
+
+/* Đây là cấu hình của Table */
+/* ================= BẢNG ================= */
+
+.thoi-khoa-bieu {
+    width: 100%;
+    border: 1px solid #2fa4e7;
+    margin: 20px;
+}
+
+table {
+    width: 100%;
+    border: 2px solid #2fa4e7;
+    border-radius: 10px;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+/* ================= HEADER ================= */
+
+thead th {
+    height: 50px;
+
+    border: 1px solid #d8dfe5;
+
+    background: #ffffff;
+
+    color: #222;
+
+    font-size: 13px;
+
+    text-align: center;
+
+    vertical-align: middle;
+}
+
+thead th span {
+    color: #6d7882;
+    font-weight: normal;
+}
+
+/* Hai nút mũi tên */
+
+.nut-dieu-huong {
+    width: 67px;
+
+    font-size: 25px;
+
+    color: #34495e;
+}
+
+
+/* ================= CÁC Ô ================= */
+
+tbody td,
+tbody th {
+    border: 1px solid #d8dfe5;
+}
+
+
+/* Cột tiết */
+
+.tiet {
+    width: 67px;
+
+    height: 48px;
+
+    background: linear-gradient(
+        to bottom,
+        #35abe5,
+        #1598d8
+    );
+
+    color: white;
+
+    font-size: 13px;
+
+    font-weight: normal;
+
+    text-align: center;
+
+    vertical-align: middle;
+}
+
+/* Cột giờ */
+
+.gio {
+    width: 64px;
+
+    background: linear-gradient(
+        to bottom,
+        #35abe5,
+        #1598d8
+    );
+
+    color: white;
+
+    font-size: 13px;
+
+    text-align: center;
+
+    vertical-align: middle;
+}
+
+/* ================= Ô MÔN HỌC ================= */
+
+.mon-hoc {
+    background: #cfe1fa;
+
+    border: 2px solid #159ee8 !important;
+
+    padding: 7px;
+
+    text-align: left;
+
+    vertical-align: top;
+
+    color: #111;
+
+    font-size: 13px;
+
+    line-height: 23px;
+}
+
+
+/* Tên môn */
+
+.mon-hoc strong {
+    font-weight: bold;
+}
+
+
+/* Thời gian */
+
+.thoi-gian {
+    display: block;
+
+    margin-top: 2px;
+
+    color: #111;
+
+    font-weight: bold;
+}
+
+
+/* Đường kẻ cuối môn */
+
+.duong-ke {
+    width: 100%;
+
+    border-bottom: 1px solid #159ee8;
+
+    margin-top: 7px;
+}
+
+
+/* ================= CHIỀU CAO ================= */
+
+/* Các ô bình thường */
+
+tbody tr {
+    height: 48px;
+}
+
+
+/* Các môn học */
+
+.mon-hoc {
+    height: 48px;
+}
+
+/* Đây là cấu hình của Table */

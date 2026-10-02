@@ -1,196 +1,251 @@
-        body {
-            margin: 0px;
-        }
+* {
+    box-sizing: border-box;
+}
 
-        nav {
-            background-color: #2fa4e7;
-        }
+body {
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
-        main {
-            display: flex; 
-        }
-        /* Khối lớn nhất */
+nav {
+    background-color: #2fa4e7;
+}
 
-        a{
-            text-decoration: none;
-        }
+main {
+    display: flex; 
+}
+/* Khối lớn nhất */
 
-        /* Khối con của Nav */
-        .danh-sach-danh-muc{
-            /*bỏ dấu chấm của list*/
-            list-style: none;
-            margin: 0px;
-            display: flex;
-            padding: 10px;
-            gap: 15px;
-            /* set các đối tượng bọc ở khối tự động cách nhau khoảng cách = giá trị truyền vào */
-        }
-
-        .muc{
-            color: white;
-            /*font-weight: bold;*/
-            padding: 15px;
-
-        }
-
-        .lien-ket-muc{
-            color: white;
-            /* để bỏ gạch chân của thẻ a dùng text-decoration*/
-            text-decoration: none;
-        }
-        /* Khối con của Nav */
+a{
+    text-decoration: none;
+    color: black;
+}
 
 
+/* Khối con của Nav */
+.danh-sach-danh-muc{
+    /*bỏ dấu chấm của list*/
+    list-style: none;
+    margin: 0px;
+    display: flex;
+    padding: 10px;
+    gap: 15px;
+    /* set các đối tượng bọc ở khối tự động cách nhau khoảng cách = giá trị truyền vào */
+}
 
-        /* Khối trái con của Main */
+.muc{
+    color: white;
+    /*font-weight: bold;*/
+    padding: 15px;
 
-        /* Khối lớn của khối trái */
-        .khoi-trai {
-            width: 20%;
-            /* background: red; */
-            height: 90vh;
-            /* để vẽ viền dùng border
-               border sẽ có 3 tham số (độ dày - loại đường viền - màu sắc) */
-            border-right: 1px solid #2fa4e7;
-        }
-        /* Khối lớn của khối trái */
-        
-        /* Các khối con của khối trái */
-        p {
-            margin: 0px;
-        }
+}
 
-        input {
-            width: 100%;
-            padding: 10px 0px;
-            border-radius: 5px;
-            border: 2px solid #dedede;
-        }
-
-        .khoi-dang-nhap {
-            /* background: red; */
-            width: 90%;
-            height: 300px;
-            margin: 10px auto;
-            /* căn giữa dùng margin: auto */
-        }
-
-        .quen-mk {
-            display: flex;
-            justify-content: flex-end;
-        }
-
-        .lien-ket-quen-mk {
-            text-decoration-line: none;
-            color: #2fa4e7;
-        }
-
-        .thong-tin {
-            margin-bottom: 10px;
-        }
-
-        button {
-            width: 100%;
-            padding: 10px 0;
-            margin-top: 10px;
-            border-radius: 5px;
-            border: 2px solid #dedede;
-            color: white;
-        }
-
-        .dang-nhap {
-            background: #2fa4e7;
-        }
-
-        .dang-nhap-365 {
-            background: #0078D4;
-        }
-        /* Các khối con của khối trái */
+.lien-ket-muc{
+    color: white;
+    /* để bỏ gạch chân của thẻ a dùng text-decoration*/
+    text-decoration: none;
+}
+/* Khối con của Nav */
 
 
+/* Khối trái của Main */
+.khoi-trai {
+    width: 20%;
+    /* background: red; */
+    /* để vẽ viền dùng border
+    border sẽ có 3 tham số (độ dày - loại đường viền - màu sắc) */
+    border-right: 1px solid #2fa4e7;
+}
 
-        /* Khối phải con của Main */
+/* Các khối con của khối trái */
+p {
+    margin: 0px;
+}
 
-        /* Khối lớn của khối phải */
-        .khoi-phai {
-            width: 80%;
-            /* background: green; */
-            height: 90vh;
-        }
-        /* Khối lớn của khối phải */
-        
-        /* Các khối con của khối phải */
-        .tin {
-            width: 95%;
-            height: 300px;
-            margin: 20px auto;
-            border: 2px solid #2fa4e7;
-            border-radius: 10px;
-        }
+input {
+    width: 100%;
+    padding: 10px 0px;
+    border-radius: 5px;
+    border: 2px solid #dedede;
+}
 
-        .tin-tren {
-            width: 95%;
-            margin: auto;
-            border-bottom: 1px solid #2fa4e7;
-            display: flex;
-            justify-content: space-between;
-            padding: 10px;
-        }
+.khoi-dang-nhap {
+    /* background: red; */
+    width: 90%;
+    height: 300px;
+    margin: 10px auto;
+    /* căn giữa dùng margin: auto */
+}
 
-        h3 {
-            margin: 0;
-        }
+.quen-mk {
+    display: flex;
+    justify-content: flex-end;
+}
 
-        .danh-sach-tin {
-            width: 95%;
-            margin: auto;
-            padding: 10px;
-            display: flex;
-        }
+.lien-ket-quen-mk {
+    text-decoration-line: none;
+    color: #2fa4e7;
+}
 
-        .bai-viet {
-            width: 25%;
-            margin-right: 20px;
-        }
+.thong-tin {
+    margin-bottom: 10px;
+}
 
-        .bai-viet-thong-bao {
-            width: 50%;
-        }
+button {
+    width: 100%;
+    padding: 10px 0;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 2px solid #dedede;
+    color: white;
+}
 
-        .bai-viet-khoi-anh{
-            width: 100%;
-        }
+.dang-nhap {
+    background: #2fa4e7;
+}
 
-        .bai-viet-thoi-gian{
-            display: flex;
-            justify-content: flex-end;
-        }
+.dang-nhap-365 {
+    background: #0078D4;
+}
 
-        img{
-            width: 100%;
-            height: 20vh;
-            border-radius: 10px;
-        }
-        
-        .menu{
-            display: flex;
-            width: 100%;
-            border-bottom: 1px solid #dedede;
-        }
+.tab{
+    width: 90%;
+    height: 300px;
+    margin: 0px auto;
+}
 
-        .menu-bai-viet{
-            width: 80%;
-            margin: auto;
-        }
+.lua-chon{
+    height: 70%;     
+}
 
-        .menu-thoi-gian{
-            width: 20%;
-            margin: auto;
-            margin-right: 0px;
-        }
+.muc-lua-chon{
+    padding: 10px 0px;
+    margin: 10px auto;
+    border-bottom: 1px solid #2fa4e7;
+    display:flex;
+    justify-content: flex-start;
+}
 
-        .xem-tiep {
-            color: #2fa4e7;
-            text-decoration-line: none;
-        }
-        /* Các khối con của khối phải */
+.lien-ket-lua-chon{
+    color:#2fa4e7;
+}
+
+.dang-chon{
+    background: #dedede;
+}
+
+.chan-trang{
+    height: 30%;
+    padding: 50px 20px 10px 20px;
+    text-align: center;
+}
+/* Các khối con của khối trái */
+
+
+
+/* Khối phải của Main */
+.khoi-phai {
+    width: 80%;
+    /* background: green; */
+}
+
+/* Các khối con của khối phải */
+.tin {
+    width: 95%;
+    height: 300px;
+    margin: 20px auto;
+    border: 2px solid #2fa4e7;
+    border-radius: 10px;
+}
+
+.tin-tren {
+    width: 95%;
+    margin: auto;
+    border-bottom: 1px solid #2fa4e7;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+h3 {
+    margin: 0;
+}
+
+.danh-sach-tin {
+    width: 95%;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+}
+
+.bai-viet {
+    width: 25%;
+    margin-right: 20px;
+}
+
+.bai-viet-khoi-anh{
+    width: 100%;
+}
+
+.bai-viet-thoi-gian{
+    display: flex;
+    justify-content: flex-end;
+}
+
+img{
+    width: 100%;
+    height: 20vh;
+    border-radius: 10px;
+}
+
+.bai-viet-thong-bao {
+    width: 50%;
+    padding: 10px;
+    padding-left: 20px;     
+    border-left: 1px solid #dedede;
+}
+
+.menu{
+    display: flex;
+    width: 100%;
+    border-bottom: 2px solid #dedede; 
+    margin-top: 10px;  
+    align-items: center;
+}
+
+.menu-bai-viet{
+    width: 80%;
+    padding-bottom: 10px;
+}
+
+.menu-thoi-gian{
+    width: 20%;
+    text-align: right;
+}
+
+.xem-tiep {
+    color: #2fa4e7;
+    text-decoration-line: none;
+}
+
+/* Khối cài đặt của khối phải */
+.cai-dat{
+    width: 95%;
+    height: 150px;
+    margin: 20px auto;
+    border: 2px solid #2fa4e7;
+    border-radius: 10px;
+}
+
+.qr{
+    display:flex;
+    justify-content: space-around;
+}
+
+.qr img {
+    height: 90px;
+    width: 80px;
+    margin-top: 8px;
+}
+/* Khối cài đặt của khối phải */
+/* Các khối con của khối phải */

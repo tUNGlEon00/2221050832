@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 7 - JS</title>
+</head>
+<body>
+    <!-- Internal Javascript -->
+    <script>
+        document.writeln("Hello <br> World!");
+        // Có thể chèn html vào js nhưng phải đặt trong dấu ""
+
+        var tenSinhVien = "Tung";
+        var tuoi = 21;
+        document.writeln(tenSinhVien + "<br>");
+        document.writeln(tuoi + "<br>");
+ 
+
+        var a = 10;
+        var b = 5;
+        // + - * /
+        // % chia lấy phần dư
+        var ketQua = a + b;
+        document.writeln(ketQua)
+
+        // ++ 
+        document.writeln(++a);
+
+        // += -= *= /= %=
+        // a = a + b;
+        document.writeln(a += b);
+
+        var x = "10";
+        var y = "5";
+        // Chuyển string sang số dùng: parseInt()
+        var sum = parseInt(a) + parseFloat(b);
+        document.writeln(sum);
+
+        // Đo độ dài String dùng length
+        document.writeln(tenSinhVien.length);
+
+        // Nối chuỗi dùng +
+
+        // Kiểm tra tồn tại
+        // indexOf
+        // trả về vị trí đầu tiên xuất hiện
+        document.writeln("<br>");
+        document.writeln(tenSinhVien.indexOf("u"));
+        document.writeln(tenSinhVien.includes("g"));  // includes trả về T nếu có và F nếu không có 
+
+        // Replace - thay thế chuỗi 
+        document.writeln("<br>");
+        tenSinhVien = tenSinhVien.replace("Tung", "Long");
+        document.writeln(tenSinhVien);
+
+        // Kiểm tra kí tự bắt đầu
+        // startwith
+        document.writeln("<br>");
+        document.writeln(tenSinhVien.startsWith("Tung"));
+
+        // Viết hoa và thường
+        document.writeln("<br>");
+        document.writeln(tenSinhVien.toUpperCase());
+        document.writeln(tenSinhVien.toLowerCase());
+
+        // Number
+        // Kiểm tra xem có phải là số không?
+        // var a = "10"
+        // var so = 20;
+        // var kq = isNaN();
+        // document.writeln(kq);
+
+        // Date
+        var homNay = new Date();
+        document.writeln("<br>");
+        document.writeln(homNay);
+
+        // Khai báo ngày cụ thể định dạng: tháng/ngày/năm
+        var ngay = new Date('2009-11-11');
+        document.writeln("<br>");
+        document.writeln(homNay);
+
+        // Lấy năm 
+        year = homNay.getFullYear();
+        document.writeln("<br>");
+        document.writeln(year);
+        // Lấy tháng
+        month = homNay.getMonth();
+        document.writeln("<br>");
+        document.writeln(month + 1);
+        // Lấy ngày
+        date = homNay.getDate();
+        document.writeln("<br>");
+        document.writeln(date);
+        // Lấy thứ trong tuần
+        day = homNay.getDay();
+        document.writeln("<br>");
+        document.writeln(day);
+
+        var namSinhTung = year - tuoi;
+        document.writeln("<br>");
+        document.writeln("Tùng sinh năm" + namSinhTung);
+
+        // Mảng - Array
+        var mangSo = [1, 2, 3, 4, 5];
+        var mangTen = ["Ái", "Ố", "Sì", "Mà"];
+        var thongTin = ["Tùng", 21, true];
+        document.writeln("<br>")
+        document.writeln(mangSo[2]);
+
+        // Kiểm tra độ dài mảng
+        document.writeln("<br>")
+        document.writeln(mangSo.length)
+
+        // Gộp mảng
+        var mang = mangSo.concat(mangTen, thongTin)
+        document.writeln("<br>")
+        document.writeln(mang)
+
+        // join
+        document.writeln("<br>")
+        document.writeln(mangSo.join("c"))
+
+        // pop lấy ra cái cuối cùng
+        document.writeln("<br>")
+        document.writeln(mangSo.pop())
+
+        // push đẩy vào từ cuối
+        document.writeln("<br>")
+        mangSo.push(6)
+        document.writeln(mangSo)
+
+        // Reverse
+        document.writeln("<br>")
+        document.writeln(mangSo.reverse())
+
+        // So sánh: ==, <=, >=, !, <, >
+        // && || là and và or
+        // Câu điều kiện if
+        var diemSo = 9.6;
+        if (diemSo < 0 || diemSo > 10 ) {
+            document.write("Điểm số không hợp lệ!!!");
+        } else if (diemSo <= 0 && diemSo >= 2) {
+            document.write("Điểm F");
+        } else if (diemSo < 2 && diemSo >= 4) {
+            document.write("Điểm D");
+        } else if (diemSo < 4 && diemSo >= 6) {
+            document.write("Điểm C");
+        } else if (diemSo < 6 && diemSo >= 8) {
+            document.write("Điểm B");
+        } else {
+            document.write("Điểm A");
+        }
+
+
+
+
+
+        
+
+    </script>
+
+    <!-- External Js -->
+    <!-- <script src="script.js"></script> -->
+
+
+
+
+
+    
+</body>
+</html>

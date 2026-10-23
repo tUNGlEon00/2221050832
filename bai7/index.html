@@ -153,8 +153,67 @@
             document.write("Điểm A");
         }
 
+        // object
+        var thongTinSinhVien = {
+            hoTen: "Doan Du",
+            tuoi: 20,
+            gioiTinh: true,  // true: Nam, False: Nữ
+            diaChi: {
+                thanhPho: "Ha Noi",
+                phuong: "Cau Giay",
+                duong: "Xuan Thuy"
+            }
+        };
+
+        var phim = {
+            ten: "Vung dat linh hon",
+            thoiLuong: 92,
+            nhaSanXuat: "Studio Ghibli",
+            nam: 2001,
+            theLoai: "hoat hinh",
+            nhanVat: {
+                nhanVatChinh: [
+                    "Sen", "Haku", "Yubaba"
+                ],
+                nhanVatPhu: [
+                    "No-Face", "Kamaji", "Rin"
+                ]
+            }
+        }
+
+        document.writeln("<br>");
+        document.writeln(phim.nhanVat.nhanVatChinh[2]);
+        
+        // switch - case
+        document.writeln("<br>");
+        var d = new Date();
+        var theDay = d.getDay();
+        switch (theDay) {
+            case 5:
+                document.writeln("Finally Friday");
+                break;
+            case 6:
+                document.writeln("Super Saturday");
+                break;
+            case 0:
+                document.writeln("Sleep Sunday");
+                break;
+            default:
+                document.writeln("I'm looking forward to this weekend!");
+        }
 
 
+        // for - hay dùng để duyệt mảng
+        for (var index = 1; index <= 10; index++) {
+            document.writeln("<br> Xin chào!" + index); 
+        }
+
+        var danhSachSinhVien = ["Thuy", "Mai", "Tuan", "Thang", "Thao"];
+        for (var i = 0; i < danhSachSinhVien.length; i++) {
+            if (danhSachSinhVien[i] == "Thuy" || danhSachSinhVien[i] == "Tuan") {    // In ra không phụ thuộc vào chỉ số index
+                document.writeln("<br> Xin chào " + danhSachSinhVien[i]);
+            }
+        }
 
 
         
